@@ -166,7 +166,7 @@ def updateEntry():
             newTime = input(f"Input New Time (MM:SS): ").strip()
 
             if newTime:
-                cur.execute('UPDATE running SET distance = ? WHERE id = ?', (newTime, id))
+                cur.execute('UPDATE running SET time = ? WHERE id = ?', (newTime, id))
                 con.commit()
                 print("="*30)
                 print(f"Time of Entry {id} succesfully updated!")
@@ -177,7 +177,7 @@ def updateEntry():
             newNote = input(f"Input New Note: ").strip()
 
             if newNote:
-                cur.execute('UPDATE running SET distance = ? WHERE id = ?', (newNote, id))
+                cur.execute('UPDATE running SET notes = ? WHERE id = ?', (newNote, id))
                 con.commit()
                 print("="*30)
                 print(f"Note of Entry {id} succesfully updated!")
