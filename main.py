@@ -255,6 +255,12 @@ def deleteEntry():
 def quit():
     print("="*30)
     print("GET AFTER IT!")
+    
+    # Read the art from file
+    with open('art.txt', 'r') as file:
+        art = file.read()
+        print(art)
+    
     print("="*30)
     con.close()
     exit()
