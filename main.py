@@ -11,7 +11,7 @@ cur.execute(''' CREATE TABLE IF NOT EXISTS running (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             date TEXT,
             distance REAL,
-            time, TEXT,
+            time TEXT,
             notes TEXT)
             ''')
             
@@ -189,7 +189,7 @@ def updateEntry():
 
         else:
             print("="*30)
-            print("Invalid Choice. Please enter a number from 1-6.")
+            print("Invalid Choice. Please enter a number from 1-5.")
             continue
 
         cur.execute('SELECT * FROM running WHERE id = ?', (id,))
@@ -263,7 +263,7 @@ while True:
     print('='*30)
     print("Running Tracker Menu !!")
     print("\nThese are the available functions:")
-    print("\n1. addRun() - Add a new run to the database")
+    print("1. addRun() - Add a new run to the database")
     print("2. viewRuns() - View all the runs in the database")
     print("3. runsLongerThan() - View all runs longer than inputted distance")
     print("4. updateEntry() - Update specific value in run entry")
