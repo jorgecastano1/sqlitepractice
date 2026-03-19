@@ -1,0 +1,69 @@
+This was split amongst multiple sessions with DeepSeek. I found Cursor was slightly 
+annoying to work with since it would write everything. Once the CREATE function was made
+I modified the syntax with AI help to implement the other functions
+
+RUNNING TRACKER APP - USER PROMPTS LOG
+=======================================
+
+1. Initial question about running Python files and seeing the >>> prompt
+   "I am running vscode on mac. 
+    jorgecastano@Jorges-MBP-4 sqlitepractice % /usr/bin/python3 -i /Users/jorgecastano/Desktop/15113
+    /repos/sqlitepractice/main.py
+    welcome to the running tracker !!
+    looks like you got it working sonzo !!
+    >>> 
+    KeyboardInterrupt
+    >>> /usr/bin/python3 -i /Users/jorgecastano/Desktop/15113/repos/sqlitepractice/main.py
+      File "<stdin>", line 1
+        /usr/bin/python3 -i /Users/jorgecastano/Desktop/15113/repos/sqlitepractice/main.py
+        ^
+    SyntaxError: invalid syntax"
+
+2. Understanding when you see >>> means you're inside the file
+   "okay, in a fresh terminal when I run it it works. So when I see >> I am inside the file ?"
+
+3. Question about while True and try/except explanation
+   "in the add run function can you explain the while true and try section, I am used to using conditionals"
+
+4. Question about typical Python CLI patterns
+   "is this how typical python clis are ran?"
+
+5. Question about f-string formatting and curly braces
+   "in the view runs function, can you explain the formatting of the fstring, why are we using curly braces"
+
+6. VS Code settings.json bracket issue
+   "[pasted settings.json with bracket error] what is wrong with the brackets here"
+
+7. Request for runslongerthan(x) function with validation
+   "I am writing a function runslongerthan(x) I want to include a check that includes a while true and checks if x is a valid input"
+
+8. Question about ValueError and TypeError tuple in except
+   "why does the except have a valueerror type error tuple?"
+
+9. Request for update function
+   "I want to make a function updateentry(id) that will first print the run aimed to be edited. then allow the user to select which field to modify"
+
+10. Question about checking ID in database
+    "Is there a way to check if the id is in the database upon input? or do we process the valid number and then check"
+
+11. Question about Update All feature necessity
+    "do I need to have the update all"
+
+12. Request for list of all prompts
+    "can you make a list of all of the prompts I have made regarding this app"
+    "Can you make a txt file with the prompts I have inputted regarding this app"
+
+13. "I want to make a deleteEntry. I understand I need input validation in most of my functions. I will do this later. How can make a deleteentry function"
+
+14. "ok. what is the logic of if not id_input?"
+
+15. (After showing your deleteEntry code with an error) "I am receiving an error saying that str is not callable"
+
+16. "how would I have a quit function, do I need a main functino?" (typo in "function")
+
+17. "are inputs automatically strings"
+
+18. "can you make a txt file with the prompts from this conversation"
+
+And then your clarification:
+19. "I meant can you compile all of the prompts I have made regarding this app"
